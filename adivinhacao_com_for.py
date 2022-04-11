@@ -4,12 +4,10 @@ print("*********************************")
 
 numero_secreto = 38
 total_tentativas = 3
-rodada = 1
 
-while(rodada <= total_tentativas):
-    print("Tentativa:", rodada, "de", total_tentativas)
-    print("Outra forma Tentativa: {} de {}".format(rodada, total_tentativas))
-    tentativa = int(input("Digite um número: "))
+for rodada in range(1, total_tentativas + 1):
+    print("Tentativa: {} de {}".format(rodada, total_tentativas))
+    tentativa = int(input("Digite um número entre 1 e 100: "))
 
     acertou = tentativa == numero_secreto
     maior = tentativa > numero_secreto
@@ -25,7 +23,5 @@ while(rodada <= total_tentativas):
             print("Você errou! Tente chutar um número menor.")
         elif (menor):
             print("Você errou! Tente chutar um número maior.")
-
-    rodada = rodada + 1
 
 print("Fim de jogo!")
