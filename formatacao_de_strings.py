@@ -28,3 +28,4 @@ print("R$ {:07.2f}".format(1))
 print("Formatação de data:")
 print("Data {:02d}/{:02d}".format(9, 4))
 print("Data {:02d}/{:02d}".format(19, 11))
+
